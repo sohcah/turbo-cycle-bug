@@ -1,20 +1,16 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "turbo-cycle-bug",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "a",
+    "b"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "turbo run build"
   },
   "devDependencies": {
-    "prettier": "latest",
-    "turbo": "latest"
+    "turbo": "1.2.6"
   },
   "engines": {
     "npm": ">=7.0.0",
